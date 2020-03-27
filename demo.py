@@ -20,8 +20,8 @@ h_fov = (-90, 90)
 v_fov = (-24.9, 2.0)
 
 # Show Image
-# pcl_uv, pcl_d, img, _ = dataset.get_projected_pts(i, h_fov, v_fov)
-# vis.show_projection(pcl_uv, pcl_d, img)
+pcl_uv, pcl_d, img, _ = dataset.get_projected_pts(i, h_fov, v_fov)
+vis.show_projection(pcl_uv, pcl_d, img)
 
 # Write Video
 vis.write_to_video(dataset, h_fov, v_fov)
